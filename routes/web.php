@@ -44,7 +44,6 @@ Route::get('/orders/search', [OrderController::class, 'search'])->name('orders.s
 Route::get('/orders/reprint/{orderId}', [OrderController::class,'reprint'])->name('orders.reprint');
 Route::get('/orders/status', [OrderController::class, 'status'])->name('orders.status');
 
-// Route::get('/orders/reprint/{orderId}', 'OrderController@reprint')->name('orders.reprint');
 
 Route::get('/shipping-details', [ShippingDetailController::class, 'index'])->name('shippingdetails.index');
 Route::get('/shippingdetails/search', [ShippingDetailController::class, 'search'])->name('shippingdetails.search');
