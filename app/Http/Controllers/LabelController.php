@@ -10,7 +10,7 @@
 //         $labels = $this->getLabelsFromAPI();
 //         return view('labels.index', compact('labels'));
 //     }
-//     private function getLabelsFromAPI()
+//     private function getsLabelsFromAPI()
 //     {
 //         $apiKey = config('app.ROYALMAIL_API_KEY');
 //         $secretKey = config('app.ROYALMAIL_SECRET_KEY');

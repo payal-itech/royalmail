@@ -41,13 +41,13 @@ Route::get('/orders/batch', [OrderController::class, 'batch'])->name('orders.bat
 // Route::get('/orders/delete', [OrderController::class, 'delete'])->name('orders.delete');
 // Route::post('/orders/delete', [OrderController::class, 'delete'])->name('orders.delete');
 Route::get('/orders/search', [OrderController::class, 'search'])->name('orders.search');
-Route::get('/shippingdetails/search', [ShippingDetailController::class, 'search'])->name('shippingdetails.search');
 Route::get('/orders/reprint/{orderId}', [OrderController::class,'reprint'])->name('orders.reprint');
 Route::get('/orders/status', [OrderController::class, 'status'])->name('orders.status');
 
 // Route::get('/orders/reprint/{orderId}', 'OrderController@reprint')->name('orders.reprint');
 
 Route::get('/shipping-details', [ShippingDetailController::class, 'index'])->name('shippingdetails.index');
+Route::get('/shippingdetails/search', [ShippingDetailController::class, 'search'])->name('shippingdetails.search');
 Route::get('/shipping-infos', [ShippingInfoController::class, 'index'])->name('shippinginfos.index');
 Route::get('/billing-infos', [BillingInfoController::class, 'index'])->name('billinginfos.index');
 Route::get('/order-lines', [OrderLineController::class, 'index'])->name('orderlines.index');
